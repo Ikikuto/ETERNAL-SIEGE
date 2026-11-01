@@ -1,16 +1,39 @@
+using System;
 using UnityEngine;
 
 public class CrystalCoreHealth : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private float maxHealth = 200f;
+
+    public float CurrentHealth { get; private set; }
+    public bool IsDead { get; private set; }
+
+    public event Action OnCoreDestroyed;
+
+    private void Awake()
     {
-        
+        CurrentHealth = maxHealth;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TakeDamage(float damage)
     {
-        
+        if (IsDead || damage <= 0f) return;
+
+        CurrentHealth = Mathf.Max(
+            0f,
+            CurrentHealth - damage
+        );
+
+        Debug.Log($"Crystal Core HP: {CurrentHealth}");
+
+        if (CurrentHealth <= 0f) Die();
+    }
+
+    private void Die()
+    {
+        IsDead = true;
+        Debug.Log("GAME OVER - Crystal Core destroyed!");
+
+        OnCoreDestroyed?.Invoke();
     }
 }
