@@ -23,22 +23,21 @@ public class EnemyCombat : MonoBehaviour
             return;
 
         // tan cong core
-        if (target.TryGetComponent<CrystalCoreHealth>(
-            out var coreHealth))
-        {
-            if (coreHealth.IsDead)
-                return;
-
-            coreHealth.TakeDamage(damage);
-        }
-        // tan cong turret
-        else if (target.TryGetComponent<TurretHealth>(
+        if (target.TryGetComponent<TurretHealth>(
             out var turretHealth))
         {
             if (turretHealth.IsDead)
                 return;
 
             turretHealth.TakeDamage(damage);
+        }
+        else if (target.TryGetComponent<CrystalCoreHealth>(
+            out var coreHealth))
+        {
+            if (coreHealth.IsDead)
+                return;
+
+            coreHealth.TakeDamage(damage);
         }
         else
         {
@@ -54,5 +53,5 @@ public class EnemyCombat : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 
-    
+
 }

@@ -1,0 +1,1552 @@
+fileFormatVersion: 2
+guid: 60b38a75a21a64db789ff9472b256d70
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4234592296663849099
+    second: Pixel Fantasy Enemy Sprite Sheet_0
+  - first:
+      213: 597152086480393794
+    second: Pixel Fantasy Enemy Sprite Sheet_1
+  - first:
+      213: -9064292512922966611
+    second: Pixel Fantasy Enemy Sprite Sheet_2
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 24
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88114b024b44ca30800000000000000
+      internalID: 4234592296663849099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 858
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2461c87a8a2894800800000000000000
+      internalID: 597152086480393794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 397
+        width: 6
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da56ef2fbf9253280800000000000000
+      internalID: -9064292512922966611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 722
+        width: 229
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52925aff8b3584492be3157d617a83c6
+      internalID: 1085327197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 725
+        width: 236
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570b10003dd7344ceabcd6c75b44298e
+      internalID: 107673905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 717
+        width: 314
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48d06692c5f34a18a14af54a5305a17
+      internalID: -1354447657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 570
+        width: 94
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea476c5456ba49d7bdfccab2eb969ef
+      internalID: -4023701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 567
+        width: 96
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f16134933174b7d8cfe5fc56071bb6
+      internalID: 1135182267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 567
+        width: 92
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823061c5a9a924cc2a3bbcbdad742f86
+      internalID: -406379534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 570
+        width: 89
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fd7b8872e5d4092a8f1fec08a40d30
+      internalID: -637516471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 430
+        width: 89
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecabf742ad664a1b8397cad7408b456
+      internalID: 888921618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 430
+        width: 89
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a581b7041c9aa4378bb861a04bccb7e2
+      internalID: -278585097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 430
+        width: 81
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97869441850db47f58c3e5ecf22529f8
+      internalID: 62664195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 427
+        width: 86
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86019b042608b419e9b0e4e7ae514997
+      internalID: 1347486054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 575
+        width: 97
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de4f9bc3f0664b02a47ed3d2cd7af8d
+      internalID: 1083896215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 564
+        width: 84
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78409ebd31772402f8da1afcff382d4b
+      internalID: 894518148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 562
+        width: 71
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b64b2f280e1495b895385e4035b1a8
+      internalID: -1759478053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 569
+        width: 82
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83c62d9194c14c0195fc3e024aa6548
+      internalID: 460374391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 427
+        width: 87
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93e32b3b3a9043f9b56002ad6b12967
+      internalID: -1083448121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 430
+        width: 77
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a93876d5bf724ee39ef50d10059da37
+      internalID: 98412304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 431
+        width: 71
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f3eb9e0700e4dd59cb7942d32a6053
+      internalID: 407134371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 428
+        width: 86
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be62f07db81ad4f24b083421b366e60c
+      internalID: 1116125083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 293
+        width: 105
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43890a70c3494dabbb495fa12825f49
+      internalID: 900891616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 291
+        width: 82
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c119d68bd71f34ecca72fb8fc9d25fa3
+      internalID: -1294237663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 287
+        width: 80
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b92b97060184f5e8a90d85dca06495
+      internalID: 1938967130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 287
+        width: 90
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b925daccfa784d8aa39bc12354dd9f3
+      internalID: 322498229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 156
+        width: 76
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185574370b8e747db9a63e145940b3c4
+      internalID: -1066978033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 156
+        width: 88
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bdc960ab01d4b36948ffdbbe53cacb
+      internalID: -1334358981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 150
+        width: 87
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f0d22e3d03049409f42a497187a069
+      internalID: -534567482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 24
+        width: 95
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f89e07cf523490d8847fc628087e40
+      internalID: -920520163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 29
+        width: 105
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ac5a8f45e3544fbbf629dcf47de4a0
+      internalID: 989892490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 22
+        width: 95
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bdc18fbeae64491adaff36cebb8c22
+      internalID: -225079441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 304
+        width: 150
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b06d0f9eddc417b93513c2e0cc1bab
+      internalID: -965408491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 301
+        width: 94
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4b19c758ad94b6a8667070d70d404d
+      internalID: -2064989107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 304
+        width: 77
+        height: 90
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712a9292f446f48e19d1ef434c4519ff
+      internalID: 510456325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 298
+        width: 84
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9253b6f61bb664180a148468e6312591
+      internalID: -1314746998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 161
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28c731932679400ba7baca129acd16a
+      internalID: 480113024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 159
+        width: 72
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b917afcc984ed42c3b8360100b8399d7
+      internalID: -1808746055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 158
+        width: 77
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8c5d41fc35847e58eddbfbfc56400b
+      internalID: 809491840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 29
+        width: 79
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f35b5c9dbe74861897cb5da5086673
+      internalID: -454725769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 27
+        width: 83
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddba0abab8a274103928bf21fa0b0bdf
+      internalID: -723255190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 30
+        width: 81
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86965e33ecd194d828ee32a43ae87afd
+      internalID: -1134621825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 30
+        width: 97
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d96fd23547043f9876861f24226fb4
+      internalID: -1860388736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 577
+        width: 103
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8dff8cb956f4f2bb2eab78cc28ad6d
+      internalID: -995699896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 573
+        width: 93
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844a457844a8045d6a38332e99b549e9
+      internalID: -957160693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 570
+        width: 97
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6085617e233b44e4939076964133217
+      internalID: 56777445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 573
+        width: 103
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59562ddd48574144b04e7642e9278e9
+      internalID: 690537817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 438
+        width: 95
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff43b9f86820486a93ac51b9a96d171
+      internalID: -958403061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 438
+        width: 96
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1d2afb9cd6c438392439834358bf1b
+      internalID: -1870551558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 435
+        width: 96
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2a7d8f0de2046e38c3b92faea9e3b1
+      internalID: 943557427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 433
+        width: 90
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fbac82f99d64d91a6fa67bd19eb182
+      internalID: -1378175376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 295
+        width: 113
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bfa6a06786c64422b24c9293fa0f517
+      internalID: -800653950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 290
+        width: 95
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c724294c4fe64fe1a7c6dceee3a1b07
+      internalID: -2088753825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 293
+        width: 106
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 13}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94abd74780c5342cea6d67da5548c1b0
+      internalID: 762770462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 296
+        width: 88
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709b58ebb49984d5098538965681cb1a
+      internalID: -16747867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 162
+        width: 103
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b9792696d8e48369bbe1cee3b08627
+      internalID: 12450379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 158
+        width: 102
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68de022053f804999ac099a65c1e0b1e
+      internalID: 76698971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 159
+        width: 104
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1360efe4249ab4dbab07964e56fa91fa
+      internalID: 637481744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 27
+        width: 103
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8951ebb2a4d1448a1bf0bcd1ed7b97b5
+      internalID: -1062779935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 32
+        width: 97
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff372bbcaaa1942e297c69802c817681
+      internalID: -1429791127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 27
+        width: 105
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9076efe8c61074177a51ccafd08aa311
+      internalID: -413564553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Fantasy Enemy Sprite Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 25
+        width: 108
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf9a14fcda6e47b78cc05c0936495b7
+      internalID: -873196346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4c289e16418f7412baae613bddb8b2e0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pixel Fantasy Enemy Sprite Sheet_0: 4234592296663849099
+      Pixel Fantasy Enemy Sprite Sheet_1: 597152086480393794
+      Pixel Fantasy Enemy Sprite Sheet_10: 888921618
+      Pixel Fantasy Enemy Sprite Sheet_11: -278585097
+      Pixel Fantasy Enemy Sprite Sheet_12: 62664195
+      Pixel Fantasy Enemy Sprite Sheet_13: 1347486054
+      Pixel Fantasy Enemy Sprite Sheet_14: 1083896215
+      Pixel Fantasy Enemy Sprite Sheet_15: 894518148
+      Pixel Fantasy Enemy Sprite Sheet_16: -1759478053
+      Pixel Fantasy Enemy Sprite Sheet_17: 460374391
+      Pixel Fantasy Enemy Sprite Sheet_18: -1083448121
+      Pixel Fantasy Enemy Sprite Sheet_19: 98412304
+      Pixel Fantasy Enemy Sprite Sheet_2: -9064292512922966611
+      Pixel Fantasy Enemy Sprite Sheet_20: 407134371
+      Pixel Fantasy Enemy Sprite Sheet_21: 1116125083
+      Pixel Fantasy Enemy Sprite Sheet_22: 900891616
+      Pixel Fantasy Enemy Sprite Sheet_23: -1294237663
+      Pixel Fantasy Enemy Sprite Sheet_24: 1938967130
+      Pixel Fantasy Enemy Sprite Sheet_25: 322498229
+      Pixel Fantasy Enemy Sprite Sheet_26: -1066978033
+      Pixel Fantasy Enemy Sprite Sheet_27: -1334358981
+      Pixel Fantasy Enemy Sprite Sheet_28: -534567482
+      Pixel Fantasy Enemy Sprite Sheet_29: -920520163
+      Pixel Fantasy Enemy Sprite Sheet_3: 1085327197
+      Pixel Fantasy Enemy Sprite Sheet_30: 989892490
+      Pixel Fantasy Enemy Sprite Sheet_31: -225079441
+      Pixel Fantasy Enemy Sprite Sheet_32: -965408491
+      Pixel Fantasy Enemy Sprite Sheet_33: -2064989107
+      Pixel Fantasy Enemy Sprite Sheet_34: 510456325
+      Pixel Fantasy Enemy Sprite Sheet_35: -1314746998
+      Pixel Fantasy Enemy Sprite Sheet_36: 480113024
+      Pixel Fantasy Enemy Sprite Sheet_37: -1808746055
+      Pixel Fantasy Enemy Sprite Sheet_38: 809491840
+      Pixel Fantasy Enemy Sprite Sheet_39: -454725769
+      Pixel Fantasy Enemy Sprite Sheet_4: 107673905
+      Pixel Fantasy Enemy Sprite Sheet_40: -723255190
+      Pixel Fantasy Enemy Sprite Sheet_41: -1134621825
+      Pixel Fantasy Enemy Sprite Sheet_42: -1860388736
+      Pixel Fantasy Enemy Sprite Sheet_43: -995699896
+      Pixel Fantasy Enemy Sprite Sheet_44: -957160693
+      Pixel Fantasy Enemy Sprite Sheet_45: 56777445
+      Pixel Fantasy Enemy Sprite Sheet_46: 690537817
+      Pixel Fantasy Enemy Sprite Sheet_47: -958403061
+      Pixel Fantasy Enemy Sprite Sheet_48: -1870551558
+      Pixel Fantasy Enemy Sprite Sheet_49: 943557427
+      Pixel Fantasy Enemy Sprite Sheet_5: -1354447657
+      Pixel Fantasy Enemy Sprite Sheet_50: -1378175376
+      Pixel Fantasy Enemy Sprite Sheet_51: -800653950
+      Pixel Fantasy Enemy Sprite Sheet_52: -2088753825
+      Pixel Fantasy Enemy Sprite Sheet_53: 762770462
+      Pixel Fantasy Enemy Sprite Sheet_54: -16747867
+      Pixel Fantasy Enemy Sprite Sheet_55: 12450379
+      Pixel Fantasy Enemy Sprite Sheet_56: 76698971
+      Pixel Fantasy Enemy Sprite Sheet_57: 637481744
+      Pixel Fantasy Enemy Sprite Sheet_58: -1062779935
+      Pixel Fantasy Enemy Sprite Sheet_59: -1429791127
+      Pixel Fantasy Enemy Sprite Sheet_6: -4023701
+      Pixel Fantasy Enemy Sprite Sheet_60: -413564553
+      Pixel Fantasy Enemy Sprite Sheet_61: -873196346
+      Pixel Fantasy Enemy Sprite Sheet_7: 1135182267
+      Pixel Fantasy Enemy Sprite Sheet_8: -406379534
+      Pixel Fantasy Enemy Sprite Sheet_9: -637516471
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
