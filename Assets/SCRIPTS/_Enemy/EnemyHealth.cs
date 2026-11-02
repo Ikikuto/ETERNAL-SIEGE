@@ -11,13 +11,28 @@ public class EnemyHealth : MonoBehaviour
     public float MaxHealth => maxHealth;
     public bool IsDead { get; private set; }
     public int XpReward => xpReward;
+    [SerializeField]
+    private GameXP gameXP;
+    [SerializeField] private EnemyHealthUI healthBar;
+
 
     private void Awake()
     {
         CurrentHealth = maxHealth;
         enemyAI = GetComponent<EnemyAI>();
+        gameXP = FindFirstObjectByType<GameXP>();
+        healthBar = FindFirstObjectByType<EnemyHealthUI>();
     }
 
+    private void Start()
+    {
+        CurrentHealth = maxHealth;
+
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(maxHealth);
+        }
+    }
 
     // Check enemy IsDead or damage <= 0
     // Update CurrentHealth + Debug.Log
@@ -33,7 +48,10 @@ public class EnemyHealth : MonoBehaviour
             CurrentHealth - damage
         );
 
-        Debug.Log($"{name} HP: {CurrentHealth}");
+        if (healthBar != null)
+        {
+            healthBar.SetHealth(CurrentHealth);
+        }
 
         if (CurrentHealth <= 0f)
         {
@@ -54,8 +72,8 @@ public class EnemyHealth : MonoBehaviour
         IsDead = true;
 
         enemyAI.OnDead();
+        gameXP.AddXP(xpReward); // TODO: Kết nối XP Reward với XPManager
 
-        // TODO: Kết nối XP Reward với XPManager
         Destroy(gameObject);
     }
 
