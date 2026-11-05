@@ -11,7 +11,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private Transform[] spawnPoints;
 
     [Header("Spawn Settings")]
-    [SerializeField, Min(1)] private int startEnemyCount = 3;
+    [SerializeField, Min(0)] private int startEnemyCount = 3;
     [SerializeField, Min(0.1f)] private float spawnInterval = 3f;
     [SerializeField, Min(1)] private int maxAliveEnemies = 25;
 

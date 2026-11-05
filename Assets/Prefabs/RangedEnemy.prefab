@@ -335,7 +335,7 @@ GameObject:
   m_Layer: 6
   m_Name: RangedEnemy
   m_TagString: Enemy
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b99918396e48f140985b2df92b05e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 100
   xpReward: 10
   gameXP: {fileID: 0}
   healthBar: {fileID: 0}
@@ -397,7 +397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   attackInterval: 1
-  attackRange: 2
+  attackRange: 1
 --- !u!50 &8298566448469034037
 Rigidbody2D:
   serializedVersion: 5
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea98e7cdf348b549b97b88fe6be3a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.4
+  moveSpeed: 1.25
 --- !u!70 &7845667998316211818
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
