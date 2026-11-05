@@ -32,8 +32,12 @@ public class CrystalCoreHealth : MonoBehaviour
     private void Die()
     {
         IsDead = true;
+
         Debug.Log("GAME OVER - Crystal Core destroyed!");
 
         OnCoreDestroyed?.Invoke();
+        gameObject.SetActive(false);
+
+        Time.timeScale = 0f;
     }
 }

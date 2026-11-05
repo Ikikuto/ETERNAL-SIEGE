@@ -2,19 +2,29 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(TurretHealth))]
-[RequireComponent(typeof(CircleCollider2D))]
-
 public class TurretCombat : MonoBehaviour
 {
     [Header("Combat Stats")]
     [SerializeField] private float damagePerTick = 2f;
-    [SerializeField, Min(0.05f)] private float attackInterval = 0.2f;
-    [SerializeField, Min(0.1f)] private float attackRange = 5f;
+    [SerializeField, Min(0.05f)]
+    private float attackInterval = 0.2f;
+    [SerializeField, Min(0.1f)]
+    private float attackRange = 5f;
+
+    [Header("Target Detection")]
+    [SerializeField] private LayerMask enemyLayer;
+
+    [Header("Target Priority")]
+    [SerializeField] private Transform crystalCore;
+
     private TurretHealth turretHealth;
-    private CircleCollider2D rangeTrigger;
-    private readonly List<EnemyHealth> enemiesInRange = new();
     private float nextAttackTime;
+
+    // danh sach Enemy (dectect theo thu tu)
+    private readonly List<EnemyHealth> enemiesInRange = new();
+
     public EnemyHealth CurrentTarget { get; private set; }
+
     public float DamagePerTick => damagePerTick;
     public float AttackInterval => attackInterval;
     public float AttackRange => attackRange;
@@ -23,94 +33,56 @@ public class TurretCombat : MonoBehaviour
     private void Awake()
     {
         turretHealth = GetComponent<TurretHealth>();
-        rangeTrigger = GetComponent<CircleCollider2D>();
-
-        // Collider phat hien enemy
-        rangeTrigger.isTrigger = true;
-        rangeTrigger.offset = Vector2.zero;
-        rangeTrigger.radius = attackRange;
     }
 
-    // turret is dead >> return
-    // Check current target (IsValidTarget) >> release target
-    // Tim new target
-    // tan cong muc tieu
     private void Update()
-    {
-        if (turretHealth.IsDead) return;
-
-        if (!IsValidTarget(CurrentTarget)) ReleaseTarget();
-
-        if (CurrentTarget == null) FindTarget();
-
-        if (CurrentTarget != null) Attack();
-    }
-
-    // check turret IsDead
-    // get component EnemyHealth khi enemy trigger
-    // check enemy null or IsDead
-    // add enemy vao list enemiesInRange
-    private void OnTriggerEnter2D(Collider2D other)
     {
         if (turretHealth.IsDead)
             return;
 
-        EnemyHealth enemy = other.GetComponentInParent<EnemyHealth>();
+        ScanEnemies();
 
-        if (enemy == null || enemy.IsDead)
-            return;
-
-        if (!enemiesInRange.Contains(enemy))
-        {
-            enemiesInRange.Add(enemy);
-        }
-    }
-
-    // get component EnemyHealth khi enemy exit trigger
-    // check enemy null
-    // remove enemy khoi list enemiesInRange
-    // gan null cho CurrentTarget neu exit trigger
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        EnemyHealth enemy = other.GetComponentInParent<EnemyHealth>();
-
-        if (enemy == null)
-            return;
-
-        enemiesInRange.Remove(enemy);
-
-        if (CurrentTarget == enemy)
+        if (!IsValidTarget(CurrentTarget))
         {
             ReleaseTarget();
         }
+
+        if (CurrentTarget == null)
+        {
+            FindTarget();
+        }
+
+        if (CurrentTarget != null)
+        {
+            Attack();
+        }
     }
 
-    // Xet trong vong lap for (start tu 0)
-    // Xoa enemy null hoac IsDead khoi list
-    // check IsValidTarget
-    // lock first valid enemy
-    private void FindTarget()
+    private void ScanEnemies()
     {
-        for (int i = 0; i < enemiesInRange.Count; i++)
-        {
-            EnemyHealth enemy = enemiesInRange[i];
+        enemiesInRange.Clear();
 
-            if (enemy == null || enemy.IsDead)
-            {
-                enemiesInRange.RemoveAt(i);
-                i--;
-                continue;
-            }
+        Collider2D[] hits = Physics2D.OverlapCircleAll(
+            transform.position,
+            attackRange,
+            enemyLayer
+        );
+
+        foreach (Collider2D hit in hits)
+        {
+            EnemyHealth enemy =
+                hit.GetComponentInParent<EnemyHealth>();
 
             if (!IsValidTarget(enemy))
                 continue;
 
-            CurrentTarget = enemy;
-            return;
+            if (!enemiesInRange.Contains(enemy))
+            {
+                enemiesInRange.Add(enemy);
+            }
         }
     }
 
-    // EnemyHealth: null, enemy dead, enemy out of range
     private bool IsValidTarget(EnemyHealth enemy)
     {
         if (enemy == null || enemy.IsDead)
@@ -124,15 +96,43 @@ public class TurretCombat : MonoBehaviour
         return distance <= attackRange;
     }
 
-    // check nextAttackTime
-    // enemy xac dinh first turret gay damage (TakeDamage)
-    // nextAttackTime = Time.time + attackInterval
+
+    private void FindTarget()
+    {
+        if (crystalCore == null)
+            return;
+
+        EnemyHealth nearestCoreEnemy = null;
+        float minDistance = float.MaxValue;
+
+        foreach (EnemyHealth enemy in enemiesInRange)
+        {
+            if (!IsValidTarget(enemy))
+                continue;
+
+            float distance = (
+                enemy.transform.position -
+                crystalCore.position
+            ).sqrMagnitude;
+
+            if (distance < minDistance)
+            {
+                minDistance = distance;
+                nearestCoreEnemy = enemy;
+            }
+        }
+
+        CurrentTarget = nearestCoreEnemy;
+    }
+
     private void Attack()
     {
+        if (CurrentTarget == null)
+            return;
+
         if (Time.time < nextAttackTime)
             return;
 
-        // Truyền Turret gây damage cho Enemy
         CurrentTarget.TakeDamage(
             damagePerTick,
             turretHealth
@@ -146,7 +146,7 @@ public class TurretCombat : MonoBehaviour
         CurrentTarget = null;
     }
 
-    // POWER-UP: Sharp Bullet
+    // Sharp Bullet
     // public void IncreaseDamage(float amount)
     // {
     //     if (amount <= 0f)
@@ -155,7 +155,7 @@ public class TurretCombat : MonoBehaviour
     //     damagePerTick += amount;
     // }
 
-    // POWER-UP: Rapid Fire
+    // Rapid Fire
     // public void IncreaseAttackSpeed(float percent)
     // {
     //     if (percent <= 0f)
@@ -167,14 +167,13 @@ public class TurretCombat : MonoBehaviour
     //     );
     // }
 
-    // POWER-UP: Long Range
+    // Long Range
     // public void IncreaseRange(float amount)
     // {
     //     if (amount <= 0f)
     //         return;
 
     //     attackRange += amount;
-    //     rangeTrigger.radius = attackRange;
     // }
 
     private void OnDrawGizmos()
@@ -186,6 +185,4 @@ public class TurretCombat : MonoBehaviour
             attackRange
         );
     }
-
-
 }
