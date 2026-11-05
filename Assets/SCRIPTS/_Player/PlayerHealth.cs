@@ -3,6 +3,8 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private float maxHealth = 100f;
+    [SerializeField] private PlayerHealthUI playerHealthUI; 
+
     private float currentHealth;
 
     public float CurrentHealth => currentHealth;
@@ -34,8 +36,11 @@ public class PlayerHealth : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private void UpdateUI()
+private void UpdateUI()
     {
-        
+        if (playerHealthUI != null)
+        {
+            playerHealthUI.SetHealth(currentHealth);
+        }
     }
 }
