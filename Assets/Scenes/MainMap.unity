@@ -1431,7 +1431,7 @@ GameObject:
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &950653867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1571,7 +1571,7 @@ GameObject:
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1333578519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1711,6 +1711,7 @@ GameObject:
   - component: {fileID: 1466273654}
   - component: {fileID: 1466273662}
   - component: {fileID: 1466273661}
+  - component: {fileID: 1466273663}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1754,6 +1755,7 @@ MonoBehaviour:
   attackPointDistance: 0.7
   attackCircle: {fileID: 0}
   circleSegments: 60
+  animator: {fileID: 1466273663}
 --- !u!114 &1466273656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1884,7 +1886,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1936,6 +1938,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  animator: {fileID: 1466273663}
+--- !u!95 &1466273663
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466273653}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a816b51fd882f4247a85c7ad6b42dfdf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1490613471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,7 +2602,6 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 405312303}
   - {fileID: 1974999052}
-  - {fileID: 1069092948}
   - {fileID: 950653868}
   - {fileID: 1307199614}
   - {fileID: 1333578520}
