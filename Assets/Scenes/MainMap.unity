@@ -329,7 +329,7 @@ Transform:
   m_GameObject: {fileID: 137071854}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.35, y: -1.94, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -721,7 +721,7 @@ Transform:
   m_GameObject: {fileID: 405312302}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.42, y: -0.22, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1431,7 +1431,7 @@ GameObject:
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &950653867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1519,7 +1519,7 @@ GameObject:
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1307199613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1536,7 +1536,7 @@ MonoBehaviour:
   crystalCore: {fileID: 405312304}
   spawnPoints:
   - {fileID: 2112397241}
-  startEnemyCount: 2
+  startEnemyCount: 0
   spawnInterval: 3
   maxAliveEnemies: 25
 --- !u!4 &1307199614
@@ -1548,7 +1548,7 @@ Transform:
   m_GameObject: {fileID: 1307199612}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 0}
+  m_LocalPosition: {x: 0.71, y: 1.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1589,7 +1589,7 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 137071855}
   startEnemyCount: 1
-  spawnInterval: 3
+  spawnInterval: 99
   maxAliveEnemies: 10
 --- !u!4 &1333578520
 Transform:
@@ -1600,7 +1600,7 @@ Transform:
   m_GameObject: {fileID: 1333578518}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 0}
+  m_LocalPosition: {x: 0.53, y: 1.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1634,8 +1634,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1974999052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2315,7 +2315,6 @@ GameObject:
   - component: {fileID: 1974999052}
   - component: {fileID: 1974999051}
   - component: {fileID: 1974999050}
-  - component: {fileID: 1974999054}
   - component: {fileID: 1974999053}
   m_Layer: 7
   m_Name: Turret1
@@ -2339,6 +2338,10 @@ MonoBehaviour:
   damagePerTick: 5
   attackInterval: 0.2
   attackRange: 2.5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  crystalCore: {fileID: 405312303}
 --- !u!114 &1974999051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2362,7 +2365,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.08, y: 1.9, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1371789951}
@@ -2414,42 +2417,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!58 &1974999054
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974999049}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
 --- !u!1 &2078025507
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,7 +2563,7 @@ Transform:
   m_GameObject: {fileID: 2112397240}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.35, y: -1.94, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2610,6 +2577,7 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 405312303}
   - {fileID: 1974999052}
+  - {fileID: 1069092948}
   - {fileID: 950653868}
   - {fileID: 1307199614}
   - {fileID: 1333578520}
