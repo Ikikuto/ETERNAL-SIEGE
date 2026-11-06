@@ -9,7 +9,7 @@ public class PlayerCombat : MonoBehaviour
     private float attackRange = 1f;
 
     [SerializeField]
-    private int attackDamage = 20;
+    private float attackDamage = 20f;
 
     [SerializeField]
     private LayerMask enemyLayer;
