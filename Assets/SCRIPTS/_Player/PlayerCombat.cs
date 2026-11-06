@@ -28,6 +28,7 @@ public class PlayerCombat : MonoBehaviour
     private float nextAttackTime;
 
     private Vector2 lastMoveDirection = Vector2.right;
+    [SerializeField] private Animator animator;
 
     private void Start()
     {
@@ -73,6 +74,14 @@ public class PlayerCombat : MonoBehaviour
 
     private void Attack()
 {
+if (animator != null)
+{
+animator.SetFloat("DirectionX", lastMoveDirection.x);
+animator.SetFloat("DirectionY", lastMoveDirection.y);
+animator.SetBool("IsAttacking", true);
+animator.SetTrigger("Attack");
+}
+
 Collider2D[] hits =
 Physics2D.OverlapCircleAll(
 attackPoint.position,
@@ -109,6 +118,14 @@ enemyHealth.TakeDamage(attackDamage);
 
         attackPoint.localPosition =
             (Vector3)(lastMoveDirection * attackPointDistance);
+    }
+
+    private void EndAttackAnimation()
+    {
+        if (animator != null)
+        {
+            animator.SetBool("IsAttacking", false);
+        }
     }
 }
 

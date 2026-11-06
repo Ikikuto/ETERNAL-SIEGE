@@ -6,3 +6,5 @@ UserSettings/
 
 *.csproj
 *.slnx
+./DS_Store
+.DS_Store
