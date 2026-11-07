@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -7,7 +6,7 @@ using System;
 public class GameXP : MonoBehaviour
 {
     [Header("XP UI")]
-    [SerializeField] private TextMeshProUGUI XPText;
+    [SerializeField] private TextMeshProUGUI LevelText; // Changed from XPText
     [SerializeField] private Slider XPSlider;
 
     [Header("XP Settings")]
@@ -69,9 +68,10 @@ public class GameXP : MonoBehaviour
             XPSlider.value = XPCount;
         }
 
-        if (XPText != null)
+        if (LevelText != null)
         {
-            XPText.text = "XP Earned: " + XPCount + "/" + MaxXP;
+            // Displays both Level and XP progress, e.g., "Lv. 2 | XP: 40/150"
+            LevelText.text = $"Lv. {CurrentLevel} | XP: {XPCount}/{MaxXP}";
         }
     }
 }

@@ -1929,7 +1929,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 950653868}
-  - component: {fileID: 950653867}
+  - component: {fileID: 950653869}
   m_Layer: 0
   m_Name: MeleeSpawner
   m_TagString: Player
@@ -1937,28 +1937,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &950653867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950653866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb5c19f763dab54c9bfe7a88b222909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 4925345945927684600, guid: ac62a0ce84c53bf41b154377a2d720bc, type: 3}
-  crystalCore: {fileID: 405312304}
-  spawnPoints:
-  - {fileID: 62604203}
-  - {fileID: 1364637830}
-  - {fileID: 1410707358}
-  - {fileID: 168083091}
-  startEnemyCount: 2
-  spawnInterval: 3
-  maxAliveEnemies: 15
 --- !u!4 &950653868
 Transform:
   m_ObjectHideFlags: 0
@@ -1978,6 +1956,24 @@ Transform:
   - {fileID: 168083091}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &950653869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950653866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a28b415c616c4169ba1618dbc864a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 4925345945927684600, guid: ac62a0ce84c53bf41b154377a2d720bc, type: 3}
+  spawnPoints:
+  - {fileID: 62604203}
+  - {fileID: 1364637830}
+  - {fileID: 1410707358}
+  - {fileID: 168083091}
 --- !u!1 &999706352
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,7 +2137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1307199614}
-  - component: {fileID: 1307199613}
+  - component: {fileID: 1307199615}
   m_Layer: 0
   m_Name: RangedSpawner
   m_TagString: Player
@@ -2149,28 +2145,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1307199613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307199612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb5c19f763dab54c9bfe7a88b222909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 4925345945927684600, guid: 6717f1dc45b0e4985ab8a0e59eb3159e, type: 3}
-  crystalCore: {fileID: 405312304}
-  spawnPoints:
-  - {fileID: 1414370116}
-  - {fileID: 944135364}
-  - {fileID: 1120504285}
-  - {fileID: 731912581}
-  startEnemyCount: 0
-  spawnInterval: 3
-  maxAliveEnemies: 25
 --- !u!4 &1307199614
 Transform:
   m_ObjectHideFlags: 0
@@ -2190,6 +2164,24 @@ Transform:
   - {fileID: 731912581}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1307199615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307199612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a28b415c616c4169ba1618dbc864a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 4925345945927684600, guid: 6717f1dc45b0e4985ab8a0e59eb3159e, type: 3}
+  spawnPoints:
+  - {fileID: 1414370116}
+  - {fileID: 944135364}
+  - {fileID: 1120504285}
+  - {fileID: 731912581}
 --- !u!1 &1333578518
 GameObject:
   m_ObjectHideFlags: 0
@@ -2199,7 +2191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1333578520}
-  - component: {fileID: 1333578519}
+  - component: {fileID: 1333578521}
   m_Layer: 0
   m_Name: TankSpawner
   m_TagString: Enemy
@@ -2207,28 +2199,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1333578519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333578518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb5c19f763dab54c9bfe7a88b222909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 4925345945927684600, guid: 10726703b1991431598e7045cd818647, type: 3}
-  crystalCore: {fileID: 405312304}
-  spawnPoints:
-  - {fileID: 81481595}
-  - {fileID: 1637341364}
-  - {fileID: 20221035}
-  - {fileID: 755775702}
-  startEnemyCount: 1
-  spawnInterval: 99
-  maxAliveEnemies: 10
 --- !u!4 &1333578520
 Transform:
   m_ObjectHideFlags: 0
@@ -2248,6 +2218,24 @@ Transform:
   - {fileID: 755775702}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1333578521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333578518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a28b415c616c4169ba1618dbc864a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 4925345945927684600, guid: 10726703b1991431598e7045cd818647, type: 3}
+  spawnPoints:
+  - {fileID: 81481595}
+  - {fileID: 1637341364}
+  - {fileID: 20221035}
+  - {fileID: 755775702}
 --- !u!1 &1364440810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2841,8 +2829,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1544463915}
+  - component: {fileID: 1544463916}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: WaveManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2863,6 +2852,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1544463916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544463914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2441a1ab795424806b637285f19e3c73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crystalCore: {fileID: 405312304}
+  meleeSpawner: {fileID: 950653869}
+  rangedSpawner: {fileID: 1307199615}
+  tankSpawner: {fileID: 1333578521}
+  gameXP: {fileID: 0}
+  currentLevel: 1
+  timeBetweenSpawns: 0.3
+  timeBetweenWaves: 5
 --- !u!1 &1637341363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2995,7 +3004,7 @@ GameObject:
   - component: {fileID: 1944318917}
   - component: {fileID: 1944318916}
   m_Layer: 5
-  m_Name: XPText
+  m_Name: LevelText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3040,7 +3049,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'XP Earned: 0'
+  m_text: 'Level: 1, XP: 0/100
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3233,6 +3244,68 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &2013748562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2013748565}
+  - component: {fileID: 2013748564}
+  - component: {fileID: 2013748563}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2013748563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013748562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 548e971e00df342faa5450f8790a9169, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelText: {fileID: 1944318916}
+  XPSlider: {fileID: 1690126697}
+  startingXPRequired: 100
+  xpGrowthMultiplier: 1.5
+--- !u!114 &2013748564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013748562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2d96fcb10f642118b2bbfdf5244017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 593772443}
+--- !u!4 &2013748565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013748562}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1280, y: 745, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2078025507
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,7 +3318,6 @@ GameObject:
   - component: {fileID: 2078025511}
   - component: {fileID: 2078025510}
   - component: {fileID: 2078025509}
-  - component: {fileID: 2078025512}
   m_Layer: 5
   m_Name: XPPanel
   m_TagString: Untagged
@@ -3338,22 +3410,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078025507}
   m_CullTransparentMesh: 1
---- !u!114 &2078025512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078025507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 548e971e00df342faa5450f8790a9169, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  XPText: {fileID: 1944318916}
-  XPSlider: {fileID: 1690126697}
-  startingXPRequired: 100
-  xpGrowthMultiplier: 1.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3372,3 +3428,4 @@ SceneRoots:
   - {fileID: 266891782}
   - {fileID: 47810199}
   - {fileID: 1466273660}
+  - {fileID: 2013748565}

@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b99918396e48f140985b2df92b05e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 30
+  maxHealth: 100
   xpReward: 5
   gameXP: {fileID: 0}
   healthBar: {fileID: 0}
