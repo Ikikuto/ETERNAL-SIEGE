@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 3cd3535a9c93d8d46a05052e40bf7085
+  productGUID: bd4327cc30e834b49bf8ea15d695d72b
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: TowerDefenseSurvival
+  productName: ETERNAL-SIEGE
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -601,14 +601,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: TowerDefenseSurvival
+  metroPackageName: ETERNAL-SIEGE
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: TowerDefenseSurvival
+  metroApplicationDescription: ETERNAL-SIEGE
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -679,11 +679,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 40b28697-5247-44cf-bf2f-f1142f46d937
+  cloudProjectId: d5fcd03e-7a74-4bbd-9630-f3420769021f
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: TowerDefenseSurvival 2026-11-01_20-35-48
-  organizationId: htkiet1209
+  projectName: ETERNAL-SIEGE
+  organizationId: riverclazz
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
