@@ -1,0 +1,354 @@
+fileFormatVersion: 2
+guid: d1bc85a3ad5012d4993d274968ea1e27
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1058342248829122785
+    second: Pixel Art Fantasy Game Button Sheet_0
+  - first:
+      213: 509296537374624293
+    second: Pixel Art Fantasy Game Button Sheet_1
+  - first:
+      213: -7572968339646727211
+    second: Pixel Art Fantasy Game Button Sheet_2
+  - first:
+      213: -5595988767968930235
+    second: Pixel Art Fantasy Game Button Sheet_3
+  - first:
+      213: 2308984019657459951
+    second: Pixel Art Fantasy Game Button Sheet_4
+  - first:
+      213: 5831950802362324106
+    second: Pixel Art Fantasy Game Button Sheet_5
+  - first:
+      213: -8785146753500514527
+    second: Pixel Art Fantasy Game Button Sheet_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pixel Art Fantasy Game Button Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 659
+        width: 848
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1780cff4530051f0800000000000000
+      internalID: -1058342248829122785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Fantasy Game Button Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 659
+        width: 848
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a0d8b9082611700800000000000000
+      internalID: 509296537374624293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Fantasy Game Button Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 447
+        width: 848
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dbb31c1b6967e690800000000000000
+      internalID: -7572968339646727211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Fantasy Game Button Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 447
+        width: 848
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546d2264ddd0752b0800000000000000
+      internalID: -5595988767968930235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Fantasy Game Button Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 235
+        width: 848
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe88cbb7bb82b0020800000000000000
+      internalID: 2308984019657459951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Fantasy Game Button Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 235
+        width: 848
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a845c521b504fe050800000000000000
+      internalID: 5831950802362324106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Fantasy Game Button Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 23
+        width: 848
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127fce9c293e41680800000000000000
+      internalID: -8785146753500514527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Fantasy Game Button Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 23
+        width: 848
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb2b4aff6cfec44e961afeb108ab71e
+      internalID: 785582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -860, y: 231.5}
+      - {x: -22, y: 231.5}
+      - {x: -22, y: 411.5}
+      - {x: -860, y: 411.5}
+    - - {x: -858, y: 15.5}
+      - {x: -24, y: 15.5}
+      - {x: -24, y: 195.5}
+      - {x: -858, y: 195.5}
+    - - {x: -857, y: -195.5}
+      - {x: -24, y: -195.5}
+      - {x: -24, y: -17.5}
+      - {x: -857, y: -17.5}
+    - - {x: -857, y: -404.5}
+      - {x: -26, y: -404.5}
+      - {x: -26, y: -227.5}
+      - {x: -857, y: -227.5}
+    - - {x: 23, y: 231.5}
+      - {x: 860, y: 231.5}
+      - {x: 860, y: 415.5}
+      - {x: 23, y: 415.5}
+    - - {x: 22, y: 16.5}
+      - {x: 861, y: 16.5}
+      - {x: 861, y: 193.5}
+      - {x: 22, y: 193.5}
+    - - {x: 21, y: -196.5}
+      - {x: 860, y: -196.5}
+      - {x: 860, y: -16.5}
+      - {x: 21, y: -16.5}
+    - - {x: 22, y: -408.5}
+      - {x: 858, y: -408.5}
+      - {x: 858, y: -227.5}
+      - {x: 22, y: -227.5}
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pixel Art Fantasy Game Button Sheet_0: -1058342248829122785
+      Pixel Art Fantasy Game Button Sheet_1: 509296537374624293
+      Pixel Art Fantasy Game Button Sheet_2: -7572968339646727211
+      Pixel Art Fantasy Game Button Sheet_3: -5595988767968930235
+      Pixel Art Fantasy Game Button Sheet_4: 2308984019657459951
+      Pixel Art Fantasy Game Button Sheet_5: 5831950802362324106
+      Pixel Art Fantasy Game Button Sheet_6: -8785146753500514527
+      Pixel Art Fantasy Game Button Sheet_7: 785582
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

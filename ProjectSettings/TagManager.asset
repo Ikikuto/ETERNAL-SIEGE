@@ -44,8 +44,14 @@ TagManager:
   - name: Ground
     uniqueID: 2116235879
     locked: 0
-  - name: Decoration
+  - name: GroundDetails
     uniqueID: 381654749
+    locked: 0
+  - name: Decorations
+    uniqueID: 887048643
+    locked: 0
+  - name: Border
+    uniqueID: 685430807
     locked: 0
   m_RenderingLayers:
   - Default
