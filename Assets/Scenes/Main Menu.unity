@@ -496,7 +496,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173313944}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffb99ee7185c3904591b69b87ea6059c, type: 3}
   m_Name: 
@@ -2018,7 +2018,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596035258}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45bf704a9b72c294f89c7b0f447f1dcd, type: 3}
   m_Name: 
@@ -2033,7 +2033,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596035258}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceaed6baaa7eefd4da13f1932fb9670c, type: 3}
   m_Name: 
@@ -2058,7 +2058,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1036316920}
-  - {fileID: 1503757712}
   - {fileID: 173313946}
   - {fileID: 1596035261}
+  - {fileID: 1503757712}
   - {fileID: 8527078}

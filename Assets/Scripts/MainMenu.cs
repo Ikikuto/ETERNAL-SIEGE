@@ -46,5 +46,5 @@ public class MainMenu : MonoBehaviour
 #else
         Application.Quit();
 #endif
-}
+    }
 }
