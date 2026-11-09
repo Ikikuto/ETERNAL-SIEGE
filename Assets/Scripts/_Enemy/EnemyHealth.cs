@@ -4,6 +4,7 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private float maxHealth = 30f;
     [SerializeField] private int xpReward = 5;
+    [SerializeField] private int scoreValue = 10;
 
     private EnemyAI enemyAI;
 
@@ -14,7 +15,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField]
     private GameXP gameXP;
     [SerializeField] private EnemyHealthUI healthBar;
-
+    [SerializeField] private GameScore gameScore;
 
     private void Awake()
     {
@@ -22,6 +23,7 @@ public class EnemyHealth : MonoBehaviour
         enemyAI = GetComponent<EnemyAI>();
         gameXP = FindFirstObjectByType<GameXP>();
         healthBar = FindFirstObjectByType<EnemyHealthUI>();
+        gameScore = FindFirstObjectByType<GameScore>();
     }
 
     private void Start()
@@ -72,10 +74,10 @@ public class EnemyHealth : MonoBehaviour
         IsDead = true;
 
         enemyAI.OnDead();
+        gameScore.AddScore(scoreValue);
         gameXP.AddXP(xpReward); // TODO: Kết nối XP Reward với XPManager
 
         Destroy(gameObject);
     }
-
 
 }
