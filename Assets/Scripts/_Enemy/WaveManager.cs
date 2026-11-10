@@ -18,9 +18,9 @@ public class WaveManager : MonoBehaviour
 
     private bool isWaveActive = false;
 
-    private void Start(){
-        if (crystalCore == null || meleeSpawner == null || 
-            rangedSpawner == null || tankSpawner == null)
+    private void Start()
+    {
+        if (crystalCore == null || meleeSpawner == null || rangedSpawner == null || tankSpawner == null)
         {
             Debug.LogError("WaveManager: Missing references!");
             return;
@@ -89,8 +89,7 @@ public class WaveManager : MonoBehaviour
         }
     }
 
-    private void GetWaveComposition(int level, out int normal, 
-                                    out int ranged, out int tank)
+    private void GetWaveComposition(int level, out int normal, out int ranged, out int tank)
     {
         // Based on your progression table
         switch (level)
