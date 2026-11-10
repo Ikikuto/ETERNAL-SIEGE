@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class EnemyCombat : MonoBehaviour
@@ -47,7 +46,7 @@ public class EnemyCombat : MonoBehaviour
         nextAttackTime = Time.time + attackInterval;
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(transform.position, attackRange);

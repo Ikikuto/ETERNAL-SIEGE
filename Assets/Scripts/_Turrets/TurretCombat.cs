@@ -6,10 +6,8 @@ public class TurretCombat : MonoBehaviour
 {
     [Header("Combat Stats")]
     [SerializeField] private float damagePerTick = 2f;
-    [SerializeField, Min(0.05f)]
-    private float attackInterval = 0.2f;
-    [SerializeField, Min(0.1f)]
-    private float attackRange = 5f;
+    [SerializeField, Min(0.05f)] private float attackInterval = 0.2f;
+    [SerializeField, Min(0.1f)] private float attackRange = 5f;
 
     [Header("Target Detection")]
     [SerializeField] private LayerMask enemyLayer;
@@ -19,16 +17,22 @@ public class TurretCombat : MonoBehaviour
 
     private TurretHealth turretHealth;
     private float nextAttackTime;
+    private float attackSpeedPoints;
 
-    // danh sach Enemy (dectect theo thu tu)
     private readonly List<EnemyHealth> enemiesInRange = new();
 
     public EnemyHealth CurrentTarget { get; private set; }
-
     public float DamagePerTick => damagePerTick;
-    public float AttackInterval => attackInterval;
     public float AttackRange => attackRange;
-    public float DPS => damagePerTick / attackInterval;
+    public float AttackSpeedPoints => attackSpeedPoints;
+    public float AttackInterval => CurrentAttackInterval;
+    public float DPS => damagePerTick / CurrentAttackInterval;
+
+    // +5 điểm attack speed nghĩa là bắn nhanh hơn 5% so với tốc độ gốc.
+    // Giới hạn interval nhỏ nhất để tránh gây quá nhiều lượt đánh/frame.
+    private float CurrentAttackInterval => Mathf.Max(
+        0.05f,
+        attackInterval / (1f + attackSpeedPoints / 100f));
 
     private void Awake()
     {
@@ -42,20 +46,16 @@ public class TurretCombat : MonoBehaviour
 
         ScanEnemies();
 
+        // Giữ mục tiêu đến khi chết hoặc ra khỏi tầm đánh.
         if (!IsValidTarget(CurrentTarget))
-        {
             ReleaseTarget();
-        }
 
+        // Khi cần đổi mục tiêu: chọn Enemy gần Crystal Core nhất.
         if (CurrentTarget == null)
-        {
             FindTarget();
-        }
 
         if (CurrentTarget != null)
-        {
             Attack();
-        }
     }
 
     private void ScanEnemies()
@@ -63,23 +63,17 @@ public class TurretCombat : MonoBehaviour
         enemiesInRange.Clear();
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(
-            transform.position,
-            attackRange,
-            enemyLayer
-        );
+            transform.position, attackRange, enemyLayer);
 
         foreach (Collider2D hit in hits)
         {
-            EnemyHealth enemy =
-                hit.GetComponentInParent<EnemyHealth>();
+            EnemyHealth enemy = hit.GetComponentInParent<EnemyHealth>();
 
             if (!IsValidTarget(enemy))
                 continue;
 
             if (!enemiesInRange.Contains(enemy))
-            {
                 enemiesInRange.Add(enemy);
-            }
         }
     }
 
@@ -89,13 +83,10 @@ public class TurretCombat : MonoBehaviour
             return false;
 
         float distance = Vector2.Distance(
-            transform.position,
-            enemy.transform.position
-        );
+            transform.position, enemy.transform.position);
 
         return distance <= attackRange;
     }
-
 
     private void FindTarget()
     {
@@ -110,10 +101,8 @@ public class TurretCombat : MonoBehaviour
             if (!IsValidTarget(enemy))
                 continue;
 
-            float distance = (
-                enemy.transform.position -
-                crystalCore.position
-            ).sqrMagnitude;
+            float distance = (enemy.transform.position
+                            - crystalCore.position).sqrMagnitude;
 
             if (distance < minDistance)
             {
@@ -127,18 +116,13 @@ public class TurretCombat : MonoBehaviour
 
     private void Attack()
     {
-        if (CurrentTarget == null)
+        if (CurrentTarget == null || Time.time < nextAttackTime)
             return;
 
-        if (Time.time < nextAttackTime)
-            return;
+        CurrentTarget.TakeDamage(damagePerTick, turretHealth);
 
-        CurrentTarget.TakeDamage(
-            damagePerTick,
-            turretHealth
-        );
-
-        nextAttackTime = Time.time + attackInterval;
+        // Dùng interval sau nâng cấp, không dùng attackInterval gốc.
+        nextAttackTime = Time.time + CurrentAttackInterval;
     }
 
     private void ReleaseTarget()
@@ -146,43 +130,33 @@ public class TurretCombat : MonoBehaviour
         CurrentTarget = null;
     }
 
-    // Sharp Bullet
-    // public void IncreaseDamage(float amount)
-    // {
-    //     if (amount <= 0f)
-    //         return;
+    public void AddDamage(float amount)
+    {
+        if (amount <= 0f)
+            return;
 
-    //     damagePerTick += amount;
-    // }
+        damagePerTick += amount;
+    }
 
-    // Rapid Fire
-    // public void IncreaseAttackSpeed(float percent)
-    // {
-    //     if (percent <= 0f)
-    //         return;
+    public void AddRange(float amount)
+    {
+        if (amount <= 0f)
+            return;
 
-    //     attackInterval = Mathf.Max(
-    //         0.05f,
-    //         attackInterval / (1f + percent)
-    //     );
-    // }
+        attackRange += amount;
+    }
 
-    // Long Range
-    // public void IncreaseRange(float amount)
-    // {
-    //     if (amount <= 0f)
-    //         return;
+    public void AddAttackSpeed(float points)
+    {
+        if (points <= 0f)
+            return;
 
-    //     attackRange += amount;
-    // }
+        attackSpeedPoints += points;
+    }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.cyan;
-
-        Gizmos.DrawWireSphere(
-            transform.position,
-            attackRange
-        );
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }

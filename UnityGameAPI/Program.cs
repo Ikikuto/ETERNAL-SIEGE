@@ -12,7 +12,7 @@ app.UseStaticFiles();
 string connectionString = "mongodb://localhost:27017";
 
 var mongoClient = new MongoClient(connectionString);
-var mongoDatabase = mongoClient.GetDatabase("unity_game");
+var mongoDatabase = mongoClient.GetDatabase("eternal_siege_leaderboard");
 var leaderboardCollection = mongoDatabase.GetCollection<ScoreEntry>("leaderboard");
 
 // 2. Default initial data
