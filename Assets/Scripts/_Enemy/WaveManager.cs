@@ -117,4 +117,6 @@ public class WaveManager : MonoBehaviour
             list[randomIndex] = temp;
         }
     }
+
+
 }
